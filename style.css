@@ -175,6 +175,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    justify-content: space-around;
     text-align: center;
   }
   .hero-image {
@@ -211,22 +212,12 @@ nav ul li a:hover {
   }
 }
 
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-  .project-section {
-    margin-top: 40px;
-  }
-  .project-card img {
-    max-width: 200px; /* Smaller images on smaller screens */
-  }
-}
-
 /* it is for hiding element */
 .hidden {
   display: none;
 }
 
-/* About section  */
+/* ////////////////////////////////// project section /////////////////////////////////// */
 .project-section {
   overflow: hidden;
   padding: 20px;
@@ -262,6 +253,7 @@ nav ul li a:hover {
 .project-section:hover .project-cards-wrapper {
   animation-play-state: paused; /* Stop scrolling on hover */
 }
+
 /* Keyframes for Horizontal Scroll Animation */
 @keyframes slide {
   0% {
@@ -271,3 +263,21 @@ nav ul li a:hover {
     transform: translateX(-50%); /* Move halfway since items are duplicated */
   }
 }
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .project-section {
+    margin-top: 40px;
+  }
+  .project-card img {
+    max-width: 200px; /* Smaller images on smaller screens */
+  }
+}
+
+@media (max-width: 300px) {
+  .project-section {
+    margin-top: 60px;
+  }
+}
+
+/* ////////////////////////////////// project section /////////////////////////////////// */
